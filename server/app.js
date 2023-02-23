@@ -1,6 +1,6 @@
 const express = require('express')
 const http  = require('http')
-const Server  = require("socket.io").Server
+//const Server  = require("socket.io").Server
 const app = express()
 const path  = require('path')
 
@@ -32,7 +32,7 @@ app.get("/*", function(req, res){
 
  
 
-
+/*
 
 io.on("connection" , (socket) => {
    console.log('We are connected')
@@ -46,6 +46,6 @@ io.on("connection" , (socket) => {
    })
 })
 
-
+*/
 
 server.listen(5001 , () => console.log('Listening to port 5001'))
